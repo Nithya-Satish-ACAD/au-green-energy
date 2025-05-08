@@ -1,0 +1,318 @@
+{
+    "context": {
+        "domain": "energy",
+        "action": "on_search",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "city": "std:080",
+        "version": "1.1.0",
+        "bap_id": "p2pTrading-bap.com",
+        "bap_uri": "https://api.p2pTrading-bap.com/pilot/bap/energy/v1",
+        "bpp_id": "p2pTrading-bpp.com",
+        "bpp_uri": "https://api.p2pTrading-bpp.com/pilot/bpp/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "catalog": {
+            "providers": [
+                {
+                    "id": "p1072",
+                    "descriptor": {
+                        "name": "Mukesh Shankar",
+                        "images": [
+                            {
+                                "url": "https://p1072.in/images/logo.png"
+                            }
+                        ]
+                    },
+                    "categories": [
+                        {
+                            "id": "1",
+                            "descriptor": {
+                                "code": "solar-energy",
+                                "name": "solar energy"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "descriptor": {
+                                "code": "EV",
+                                "name": "electric vehicle"
+                            }
+                        }
+                    ],
+                    "locations": [
+                        {
+                            "descriptor": {
+                                "code": "house"
+                            },
+                            "address": "der://mukesh.house",
+                            "id": "1",
+                            "gps": "12.345345,77.389754"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "ev"
+                            },
+                            "address": "der://mukesh.ev",
+                            "id": "2",
+                            "gps": "12.345345,77.389754"
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "1",
+                            "agent": {
+                                "organization": {
+                                    "descriptor": {
+                                        "name": "UPPCL"
+                                    }
+                                }
+                            },
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "location": {
+                                        "address": "der://uppcl.meter/92982739" 
+                                    },
+                                    "time": {
+                                        "range": {
+                                            "start": "2024-10-04T10:00:00",
+                                            "end": "2024-10-04T18:00:00"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "time": {
+                                        "range": {
+                                            "start": "2024-10-04T10:00:00",
+                                            "end": "2024-10-04T18:00:00"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "uid_xyz",
+                            "descriptor": {
+                                "code": "energy"
+                            },
+                            "price": {
+                                "value": "5",
+                                "currency": "INR/kWH"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "measure": {
+                                        "value": "30",
+                                        "unit": "kWH"
+                                    }
+                                }
+                            },
+                            "category_ids": [
+                                "1"
+                            ],
+                            "location_ids": [
+                                "1"
+                            ],
+                            "fulfillment_ids": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "provider2",
+                    "descriptor": {
+                        "name": "ABC Solar farms",
+                        "short_desc": "Utility scale solar farm",
+                        "images": [
+                            {
+                                "url": "https://provider2.in/images/logo.png"
+                            }
+                        ]
+                    },
+                    "categories": [
+                        {
+                            "id": "1",
+                            "descriptor": {
+                                "code": "solar-energy",
+                                "name": "solar energy"
+                            }
+                        }
+                    ],
+                    "locations": [
+                        {
+                            "id": "1",
+                            "gps": "12.297668,77.276467"
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "1",
+                            "agent": {
+                                "organization": {
+                                    "descriptor": {
+                                        "name": "UPPCL"
+                                    }
+                                }
+                            },
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "location": {
+                                        "address": "der://uppcl.meter/92982739"
+                                    },
+                                    "time": {
+                                        "range": {
+                                            "start": "2024-10-04T10:00:00",
+                                            "end": "2024-10-04T18:00:00"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "time": {
+                                        "range": {
+                                            "start": "2024-10-04T10:00:00",
+                                            "end": "2024-10-04T18:00:00"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "uid_abc",
+                            "descriptor": {
+                                "code": "energy"
+                            },
+                            "price": {
+                                "value": "7",
+                                "currency": "INR/kWH"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "measure": {
+                                        "value": "25000",
+                                        "unit": "kWH"
+                                    }
+                                }
+                            },
+                            "category_ids": [
+                                "1"
+                            ],
+                            "location_ids": [
+                                "1"
+                            ],
+                            "fulfillment_ids": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "provider3",
+                    "descriptor": {
+                        "name": "Sharda Desai",
+                        "short_desc": "Rooftop solar energy",
+                        "images": [
+                            {
+                                "url": "https://provider3.in/images/logo.png"
+                            }
+                        ]
+                    },
+                    "categories": [
+                        {
+                            "id": "1",
+                            "descriptor": {
+                                "code": "solar-energy",
+                                "name": "solar energy"
+                            }
+                        }
+                    ],
+                    "locations": [
+                        {
+                            "id": "1",
+                            "gps": "12.187363,77.137474"
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "1",
+                            "agent": {
+                                "organization": {
+                                    "descriptor": {
+                                        "name": "UPPCL"
+                                    }
+                                }
+                            },
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "location": {
+                                        "address": "der://uppcl.meter/92982739" 
+                                    },
+                                    "time": {
+                                        "range": {
+                                            "start": "2024-10-04T10:00:00",
+                                            "end": "2024-10-04T18:00:00"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "time": {
+                                        "range": {
+                                            "start": "2024-10-04T10:00:00",
+                                            "end": "2024-10-04T18:00:00"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "uid_mnq",
+                            "descriptor": {
+                                "code": "energy"
+                            },
+                            "price": {
+                                "value": "7.3",
+                                "currency": "INR/kWH"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "measure": {
+                                        "value": "15",
+                                        "unit": "kWH"
+                                    }
+                                }
+                            },
+                            "category_ids": [
+                                "1"
+                            ],
+                            "location_ids": [
+                                "1"
+                            ],
+                            "fulfillment_ids": [
+                                "1"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
